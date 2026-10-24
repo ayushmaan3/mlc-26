@@ -1,0 +1,8 @@
+> ce train fold 1
+fold 1: 391 uncertain pairs, training on 391, pos rate 0.939
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  32%|███▏      | 64/201 [00:00<00:00, 634.79it/s]Loading weights:  64%|██████▎   | 128/201 [00:00<00:00, 629.25it/s]Loading weights: 100%|██████████| 201/201 [00:00<00:00, 697.00it/s]
+D:\Amazzon\smoke_kaggle\workingX\src\s8_ce.py:75: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:219.)
+  loss = lossf(logit.float(), torch.from_numpy(y[sl]).to(DEV))
+  step 0/7 loss 0.5431 10 pairs/s eta 1 min
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:08<00:00,  8.96s/it]Writing model shards: 100%|██████████| 1/1 [00:08<00:00,  8.97s/it]
+  ce train fold 1: 34s

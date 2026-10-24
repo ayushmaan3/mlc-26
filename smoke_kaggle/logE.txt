@@ -1,0 +1,368 @@
+inputs: core=D:/Amazzon/smoke_kaggle/input/mlc26-core emb=D:/Amazzon/smoke_kaggle/input/mlc26-emb v3=D:/Amazzon/smoke_kaggle/input/mlc26-v3
+linked 119 inputs
+run_E_local.sh: line 17: free: command not found
+reusing fine-tuned kNN of run C: 16 files
+original e5: D:/Amazzon/smoke_kaggle/input_e5/multilingual-e5-small
+== fine-tune the two fold models, one per GPU Sun, Sep 27, 2026  9:05:18 AM
+> fine-tune m1 on S1 buckets [1, 3, 5, 7]
+09:06:04 m1 BASELINE original e5 recall@5/10/20: {5: 0.9337, 10: 0.9918, 20: 0.9947}
+09:06:32 m1 FINE-TUNED recall@5/10/20: {5: 0.9379, 10: 0.9939, 20: 0.9963}  (delta @20 +0.0016)
+  fine-tune m1 on S1 buckets [1, 3, 5, 7]: 50s
+== encode every record with both fold models Sun, Sep 27, 2026  9:06:38 AM
+free disk on /tmp: 14 GB (both splits at once need ~37 GB)
+  encode train with m0 + m1: 25s
+> ftc features train
+D:\Amazzon\smoke_kaggle\workingE\src\s18_ftcos.py:144: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  S = torch.from_numpy(np.ascontiguousarray(E[s1_rows])).to(dev).float()
+  cosines bucket 0: 10,817 pairs
+  cosines bucket 1: 9,301 pairs
+  cosines bucket 2: 11,320 pairs
+  cosines bucket 3: 10,592 pairs
+  cosines bucket 4: 11,292 pairs
+  cosines bucket 5: 10,552 pairs
+  cosines bucket 6: 10,453 pairs
+  cosines bucket 7: 11,291 pairs
+  ftc features train: 1s
+  encode test with m0 + m1: 25s
+> ftc features test
+D:\Amazzon\smoke_kaggle\workingE\src\s18_ftcos.py:144: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  S = torch.from_numpy(np.ascontiguousarray(E[s1_rows])).to(dev).float()
+  cosines bucket 0: 10,834 pairs
+  cosines bucket 1: 9,701 pairs
+  cosines bucket 2: 11,612 pairs
+  cosines bucket 3: 11,453 pairs
+  cosines bucket 4: 9,994 pairs
+  cosines bucket 5: 10,629 pairs
+  cosines bucket 6: 10,382 pairs
+  cosines bucket 7: 10,200 pairs
+  ftc features test: 1s
+== cosine Sun, Sep 27, 2026  9:08:30 AM
+> cos3 train 0
+D:\Amazzon\smoke_kaggle\workingE\src\s10_v3.py:80: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  S = torch.from_numpy(np.ascontiguousarray(E[s1_rows])).to(DEV).float()   # this bucket's S1 embeddings
+  cos3 train 0: 1s
+> cos3 train 1
+  cos3 train 1: 0s
+> cos3 train 2
+  cos3 train 2: 0s
+> cos3 train 3
+  cos3 train 3: 0s
+> cos3 train 4
+  cos3 train 4: 0s
+> cos3 train 5
+  cos3 train 5: 0s
+> cos3 train 6
+  cos3 train 6: 0s
+> cos3 train 7
+  cos3 train 7: 0s
+> cos3 test 0
+D:\Amazzon\smoke_kaggle\workingE\src\s10_v3.py:80: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  S = torch.from_numpy(np.ascontiguousarray(E[s1_rows])).to(DEV).float()   # this bucket's S1 embeddings
+  cos3 test 0: 0s
+> cos3 test 1
+  cos3 test 1: 0s
+> cos3 test 2
+  cos3 test 2: 0s
+> cos3 test 3
+  cos3 test 3: 0s
+> cos3 test 4
+  cos3 test 4: 0s
+> cos3 test 5
+  cos3 test 5: 0s
+> cos3 test 6
+  cos3 test 6: 0s
+> cos3 test 7
+  cos3 test 7: 0s
+== feat3 Sun, Sep 27, 2026  9:08:40 AM
+> feat3 train 0
+  new pairs 6,063 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 0: 3s
+> feat3 train 1
+  new pairs 5,551 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 1: 2s
+> feat3 train 2
+  new pairs 6,248 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 2: 2s
+> feat3 train 3
+  new pairs 5,946 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 3: 2s
+> feat3 train 4
+  new pairs 6,359 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 4: 2s
+> feat3 train 5
+  new pairs 6,325 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 5: 1s
+> feat3 train 6
+  new pairs 5,945 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 6: 2s
+> feat3 train 7
+  new pairs 6,330 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 7: 4s
+> feat3 test 0
+  new pairs 6,485 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 0: 3s
+> feat3 test 1
+  new pairs 5,645 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 1: 3s
+> feat3 test 2
+  new pairs 6,737 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 2: 2s
+> feat3 test 3
+  new pairs 6,440 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 3: 2s
+> feat3 test 4
+  new pairs 5,843 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 4: 2s
+> feat3 test 5
+  new pairs 5,959 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 5: 2s
+> feat3 test 6
+  new pairs 5,984 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 6: 2s
+> feat3 test 7
+  new pairs 6,011 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 7: 2s
+feat3 train: 85,618 pairs, positives 11,125 / 11,166 = recall 0.9963
+== address add-on for the new union Sun, Sep 27, 2026  9:10:34 AM
+> addr4 train 0
+  addr4 train 0: 2s
+> addr4 train 1
+  addr4 train 1: 1s
+> addr4 train 2
+  addr4 train 2: 1s
+> addr4 train 3
+  addr4 train 3: 1s
+> addr4 train 4
+  addr4 train 4: 1s
+> addr4 train 5
+  addr4 train 5: 1s
+> addr4 train 6
+  addr4 train 6: 1s
+> addr4 train 7
+  addr4 train 7: 1s
+> addr4 test 0
+  addr4 test 0: 2s
+> addr4 test 1
+  addr4 test 1: 1s
+> addr4 test 2
+  addr4 test 2: 1s
+> addr4 test 3
+  addr4 test 3: 1s
+> addr4 test 4
+  addr4 test 4: 1s
+> addr4 test 5
+  addr4 test 5: 1s
+> addr4 test 6
+  addr4 test 6: 1s
+> addr4 test 7
+  addr4 test 7: 1s
+== per-record competition features Sun, Sep 27, 2026  9:11:03 AM
+> idcomp train
+  idcomp train: 0s
+> idcomp test
+  idcomp test: 0s
+== stage9 = stage 7 + fine-tuned cosine features, FULL DATA Sun, Sep 27, 2026  9:11:05 AM
+stage 9: 89 features
+> train stage 9 fold 0 on buckets [0, 2, 4, 6]
+[0]	ev-logloss:0.32292
+[100]	ev-logloss:0.00413
+[200]	ev-logloss:0.00353
+[300]	ev-logloss:0.00340
+[356]	ev-logloss:0.00344
+best iteration 256
+top gain: [('ftc', 2969), ('emb_cos', 2889), ('ftc_rk_id', 202), ('ftc_gap_id', 151), ('idc_rk_em', 139), ('idc_rk_ps', 139), ('sc', 138), ('idc_rk_ad', 124), ('idc_gap_ps', 119), ('idc_gap_ad', 99), ('ce', 87), ('sup_max', 70), ('idc_gap_em', 69), ('pair_sum2', 64), ('rk', 46), ('nosp_ratio', 44), ('nk5', 34), ('addr_tset', 33), ('ad_wcov2', 30), ('num_reldiff', 29)]
+  train stage 9 fold 0 on buckets [0, 2, 4, 6]: 5s
+> train stage 9 fold 1 on buckets [1, 3, 5, 7]
+[0]	ev-logloss:0.31609
+[100]	ev-logloss:0.00225
+[200]	ev-logloss:0.00181
+[300]	ev-logloss:0.00166
+[374]	ev-logloss:0.00168
+best iteration 274
+top gain: [('ftc', 2736), ('emb_cos', 2653), ('sc', 312), ('ftc_rk_id', 171), ('idc_gap_ps', 159), ('idc_rk_ps', 151), ('ftc_gap_id', 113), ('addr_tsort', 98), ('ce', 96), ('idc_gap_ad', 95), ('idc_rk_ad', 93), ('nk6', 88), ('idc_rk_em', 48), ('idc_gap_em', 42), ('pair_sum2', 41), ('core_tsort', 41), ('sup_n90', 40), ('rk', 35), ('sup_max', 27), ('ftc_rk', 27)]
+  train stage 9 fold 1 on buckets [1, 3, 5, 7]: 5s
+> oof stage 9 bucket 0
+  oof stage 9 bucket 0: 0s
+> oof stage 9 bucket 2
+  oof stage 9 bucket 2: 0s
+> oof stage 9 bucket 4
+  oof stage 9 bucket 4: 0s
+> oof stage 9 bucket 6
+  oof stage 9 bucket 6: 0s
+> oof stage 9 bucket 1
+  oof stage 9 bucket 1: 0s
+> oof stage 9 bucket 3
+  oof stage 9 bucket 3: 0s
+> oof stage 9 bucket 5
+  oof stage 9 bucket 5: 0s
+> oof stage 9 bucket 7
+  oof stage 9 bucket 7: 0s
+> test stage 9 bucket 0
+  test stage 9 bucket 0: 1s
+> test stage 9 bucket 1
+  test stage 9 bucket 1: 1s
+> test stage 9 bucket 2
+  test stage 9 bucket 2: 1s
+> test stage 9 bucket 3
+  test stage 9 bucket 3: 1s
+> test stage 9 bucket 4
+  test stage 9 bucket 4: 1s
+> test stage 9 bucket 5
+  test stage 9 bucket 5: 1s
+> test stage 9 bucket 6
+  test stage 9 bucket 6: 1s
+> test stage 9 bucket 7
+  test stage 9 bucket 7: 1s
+stage 9 OOF macro F0.5 (all train S1, global assign): best t=0.75 F=0.99342
+{0.2: 0.9896, 0.225: 0.9901, 0.25: 0.9902, 0.275: 0.9903, 0.3: 0.9905, 0.325: 0.9909, 0.35: 0.9911, 0.375: 0.9912, 0.4: 0.9913, 0.425: 0.9918, 0.45: 0.9924, 0.475: 0.9923, 0.5: 0.9925, 0.525: 0.9927, 0.55: 0.9928, 0.575: 0.9929, 0.6: 0.9932, 0.625: 0.9932, 0.65: 0.9932, 0.675: 0.9931, 0.7: 0.9934, 0.725: 0.9934, 0.75: 0.9934, 0.775: 0.9933, 0.8: 0.9932, 0.825: 0.9931, 0.85: 0.9929, 0.875: 0.9922, 0.9: 0.9916, 0.925: 0.9909, 0.95: 0.9888}
+by country {'India': 0.9915421534774553, 'US': 0.9946407985736236}
+> tune v3s9 [9]
+v3s9 [9]: OOF best t=0.75 F0.5=0.99342 | at 0.80: 0.99316 | by country {'India': 0.9915, 'US': 0.9946}
+  tune v3s9 [9]: 0s
+> write v3s9
+  wrote D:\Amazzon\smoke_kaggle\workingE\v3s9/matching_results.tsv  matched pairs 10,762
+  wrote D:\Amazzon\smoke_kaggle\workingE\v3s9_fr90/matching_results.tsv  matched pairs 10,736
+  wrote D:\Amazzon\smoke_kaggle\workingE\v3s9_t80/matching_results.tsv  matched pairs 10,736
+  wrote D:\Amazzon\smoke_kaggle\workingE\candidates\candidate_pairs.tsv
+  write v3s9: 0s
+PASS — no blocking issues found. Safe to submit.
+PASS — no blocking issues found. Safe to submit.
+PASS — no blocking issues found. Safe to submit.
+== SUBMISSION READY: v3s9 (+ _fr90, _t80) Sun, Sep 27, 2026  9:11:30 AM
+== stage10: second model (511 leaves, other seed/columns) Sun, Sep 27, 2026  9:11:30 AM
+stage 10: 89 features
+> train stage 10 fold 0 on buckets [0, 2, 4, 6]
+[0]	ev-logloss:0.32337
+[100]	ev-logloss:0.00416
+[200]	ev-logloss:0.00398
+[300]	ev-logloss:0.00392
+[400]	ev-logloss:0.00394
+[416]	ev-logloss:0.00394
+best iteration 316
+top gain: [('emb_cos', 3512), ('ftc', 2729), ('pair_sum2', 2040), ('pair_sum', 1302), ('sc', 1082), ('idc_rk_ps', 367), ('idc_rk_em', 360), ('ftc_rk_id', 188), ('in_keys', 168), ('idc_rk_ad', 166), ('idc_gap_ps', 140), ('ftc_gap_id', 136), ('sup_n90', 111), ('rk', 88), ('sup_max', 84), ('nm_wj', 83), ('nosp_ratio', 78), ('ftc_rk', 71), ('ad_wcov2', 69), ('erk', 67)]
+  train stage 10 fold 0 on buckets [0, 2, 4, 6]: 5s
+> train stage 10 fold 1 on buckets [1, 3, 5, 7]
+[0]	ev-logloss:0.31763
+[100]	ev-logloss:0.00321
+[200]	ev-logloss:0.00252
+[300]	ev-logloss:0.00252
+[400]	ev-logloss:0.00251
+[500]	ev-logloss:0.00251
+[557]	ev-logloss:0.00249
+best iteration 457
+top gain: [('emb_cos', 3323), ('ftc', 3185), ('sc', 1486), ('pair_sum', 793), ('ftc_rk_id', 582), ('pair_sum2', 498), ('idc_gap_ps', 491), ('ftc_gap_id', 248), ('idc_rk_ps', 229), ('idc_gap_ad', 177), ('rk', 138), ('name_ratio', 123), ('gap_s1_best2', 104), ('sup_n90', 101), ('addr_tsort', 98), ('idc_rk_ad', 96), ('sup_max', 74), ('sup_mean', 74), ('ce', 64), ('ftc_rk', 57)]
+  train stage 10 fold 1 on buckets [1, 3, 5, 7]: 6s
+> oof stage 10 bucket 0
+  oof stage 10 bucket 0: 0s
+> oof stage 10 bucket 2
+  oof stage 10 bucket 2: 0s
+> oof stage 10 bucket 4
+  oof stage 10 bucket 4: 0s
+> oof stage 10 bucket 6
+  oof stage 10 bucket 6: 0s
+> oof stage 10 bucket 1
+  oof stage 10 bucket 1: 0s
+> oof stage 10 bucket 3
+  oof stage 10 bucket 3: 0s
+> oof stage 10 bucket 5
+  oof stage 10 bucket 5: 0s
+> oof stage 10 bucket 7
+  oof stage 10 bucket 7: 0s
+> test stage 10 bucket 0
+  test stage 10 bucket 0: 1s
+> test stage 10 bucket 1
+  test stage 10 bucket 1: 1s
+> test stage 10 bucket 2
+  test stage 10 bucket 2: 1s
+> test stage 10 bucket 3
+  test stage 10 bucket 3: 1s
+> test stage 10 bucket 4
+  test stage 10 bucket 4: 1s
+> test stage 10 bucket 5
+  test stage 10 bucket 5: 1s
+> test stage 10 bucket 6
+  test stage 10 bucket 6: 1s
+> test stage 10 bucket 7
+  test stage 10 bucket 7: 1s
+stage 10 OOF macro F0.5 (all train S1, global assign): best t=0.625 F=0.99199
+{0.2: 0.9864, 0.225: 0.9873, 0.25: 0.9878, 0.275: 0.9886, 0.3: 0.9888, 0.325: 0.9895, 0.35: 0.9897, 0.375: 0.9905, 0.4: 0.9911, 0.425: 0.9912, 0.45: 0.9912, 0.475: 0.9912, 0.5: 0.9914, 0.525: 0.9919, 0.55: 0.9916, 0.575: 0.9918, 0.6: 0.9918, 0.625: 0.992, 0.65: 0.992, 0.675: 0.9919, 0.7: 0.9916, 0.725: 0.9914, 0.75: 0.9915, 0.775: 0.9915, 0.8: 0.9913, 0.825: 0.9911, 0.85: 0.99, 0.875: 0.9891, 0.9: 0.9884, 0.925: 0.9866, 0.95: 0.9845}
+by country {'India': 0.9888019634165458, 'US': 0.9940734345420381}
+> tune blend910 [9, 10]
+blend910 [9, 10]: OOF best t=0.7 F0.5=0.99312 | at 0.80: 0.99222 | by country {'India': 0.9901, 'US': 0.9951}
+  tune blend910 [9, 10]: 0s
+> write blend910
+  wrote D:\Amazzon\smoke_kaggle\workingE\blend910/matching_results.tsv  matched pairs 10,746
+  wrote D:\Amazzon\smoke_kaggle\workingE\blend910_fr90/matching_results.tsv  matched pairs 10,668
+  wrote D:\Amazzon\smoke_kaggle\workingE\blend910_t80/matching_results.tsv  matched pairs 10,668
+  write blend910: 0s
+PASS — no blocking issues found. Safe to submit.
+PASS — no blocking issues found. Safe to submit.
+PASS — no blocking issues found. Safe to submit.
+== SUBMISSION READY: blend910 (+ _fr90, _t80) Sun, Sep 27, 2026  9:11:55 AM
+936M	D:/Amazzon/smoke_kaggle/workingE
+== KAGGLE RUN E DONE Sun, Sep 27, 2026  9:11:56 AM
+script exit 0

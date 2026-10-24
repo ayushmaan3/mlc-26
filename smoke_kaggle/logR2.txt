@@ -1,0 +1,39 @@
+inputs: core=D:/Amazzon/smoke_kaggle/input/mlc26-core emb=D:/Amazzon/smoke_kaggle/input/mlc26-emb v3=D:/Amazzon/smoke_kaggle/input/mlc26-v3
+linked 102 inputs
+D:/Amazzon/smoke_kaggle/run_R_local.sh: line 14: free: command not found
+== PREFLIGHT: inputs, GPUs, e5, disk Sun, Sep 27, 2026  2:36:16 PM
+PREFLIGHT OK: all 97 input files found and readable | GPUs 1 (NVIDIA GeForce RTX 3050 6GB Laptop GPU) | original e5 in the inputs (D:/Amazzon/smoke_kaggle/input_e5/multilingual-e5-small) | disk free 12 GB | RAM n/a
+run D models + test predictions found
+SELFTEST OK (polars 1.44.2): ambiguous / decode / 4 rule families / f05 = 0.6667
+== OOF p7 found in the inputs (earlier run R): skipping the train feature rebuild
+== rules on train OOF Sun, Sep 27, 2026  2:36:28 PM
+> rules on train OOF
+baseline OOF at t 0.8: all 0.99330 | US 0.99486 | India 0.99090 | generic 0.98159 | generic S1 70 of 3,200 | caps {0.99: 8, 0.999: 9}
+  num   0.97   dropped        1  precision 1.000  dF all -0.00007  US -0.00011  India +0.00000  generic -0.00298  -
+  num   0.99   dropped        2  precision 1.000  dF all -0.00038  US -0.00062  India +0.00000  generic -0.01726  -
+  num   1.01   dropped        8  precision 1.000  dF all -0.00055  US -0.00090  India +0.00000  generic -0.02491  -
+  noad  0.97   dropped        5  precision 0.800  dF all -0.00001  US -0.00012  India +0.00017  generic -0.00036  -
+  noad  0.99   dropped        6  precision 0.833  dF all -0.00002  US -0.00014  India +0.00017  generic -0.00100  -
+  noad  1.01   dropped        7  precision 0.714  dF all +0.00012  US +0.00008  India +0.00017  generic +0.00535  -
+  cap   0.99   dropped        7  precision 1.000  dF all -0.00005  US -0.00006  India -0.00004  generic +0.00000  -
+  cap   0.999  dropped        0  precision 0.000  dF all +0.00000  US +0.00000  India +0.00000  generic +0.00000  -
+  amb   0.05   dropped        2  precision 0.500  dF all +0.00013  US +0.00021  India +0.00000  generic +0.00585  PASS
+  amb   0.1    dropped        2  precision 0.500  dF all +0.00013  US +0.00021  India +0.00000  generic +0.00585  PASS
+SELECTED {'amb': 0.05} -> combined OOF at t 0.8: all 0.99342 (+0.00013) | US 0.99507 (+0.00021) | India 0.99090 (+0.00000) | generic 0.98744 (+0.00585)
+  rules on train OOF: 1s
+> apply rules {'amb': 0.05} to stages [7, 8] -> blend78ft_rules
+shape: (2, 6)
+┌─────────┬─────────┬─────────┬──────┬────────────────┬─────────────┐
+│ country ┆ matched ┆ dropped ┆ n_s1 ┆ matches_per_S1 ┆ after_rules │
+│ ---     ┆ ---     ┆ ---     ┆ ---  ┆ ---            ┆ ---         │
+│ str     ┆ u32     ┆ u32     ┆ u32  ┆ f64            ┆ f64         │
+╞═════════╪═════════╪═════════╪══════╪════════════════╪═════════════╡
+│ India   ┆ 4475    ┆ 0       ┆ 1335 ┆ 3.352          ┆ 3.352       │
+│ US      ┆ 6209    ┆ 0       ┆ 1865 ┆ 3.329          ┆ 3.329       │
+└─────────┴─────────┴─────────┴──────┴────────────────┴─────────────┘
+  wrote D:\Amazzon\smoke_kaggle\workingR\blend78ft_rules/matching_results.tsv  matched pairs 10,684 (before rules 10,684)
+  apply rules {'amb': 0.05} to stages [7, 8] -> blend78ft_rules: 0s
+PASS — no blocking issues found. Safe to submit.
+== SUBMISSION READY: blend78ft_rules Sun, Sep 27, 2026  2:36:38 PM
+572K	D:/Amazzon/smoke_kaggle/workingR
+== KAGGLE RUN R DONE Sun, Sep 27, 2026  2:36:38 PM

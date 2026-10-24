@@ -1,0 +1,12 @@
+> fine-tune m1 on S1 buckets [1, 3, 5, 7]
+09:05:44 m1: train pairs 5,462 | eval S1 1,524 (other fold) | eval pairs 5,704 | db 25,704
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  55%|#####5    | 110/199 [00:00<00:00, 1064.75it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1170.24it/s]
+D:\Amazzon\.venv\Lib\site-packages\torch\nn\modules\module.py:1370: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  return t.to(
+09:06:04 m1 BASELINE original e5 recall@5/10/20: {5: 0.9337, 10: 0.9918, 20: 0.9947}
+D:\Amazzon\smoke_kaggle\workingE\src\s17_ft_retrieval.py:97: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  sched.step()
+09:06:05 step 0/42 loss 2.2227 eta 1 min
+09:06:32 m1 FINE-TUNED recall@5/10/20: {5: 0.9379, 10: 0.9939, 20: 0.9963}  (delta @20 +0.0016)
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|##########| 1/1 [00:02<00:00,  2.28s/it]Writing model shards: 100%|##########| 1/1 [00:02<00:00,  2.28s/it]
+  fine-tune m1 on S1 buckets [1, 3, 5, 7]: 50s

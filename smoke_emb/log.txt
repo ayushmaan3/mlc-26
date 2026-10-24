@@ -1,0 +1,26 @@
+== encode test Sat, Sep 26, 2026  7:53:49 AM
+> encode test
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 56/199 [00:00<00:00, 559.30it/s]Loading weights:  56%|█████▋    | 112/199 [00:00<00:00, 398.02it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 574.47it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 538.35it/s]
+  chunk 1/8: 0/3,628 659/s chunk eta 0 min
+  CHUNK 1/8 DONE (2s) + saved to Drive
+  chunk 2/8: 0/3,629 3774/s chunk eta 0 min
+  CHUNK 2/8 DONE (1s) + saved to Drive
+  chunk 3/8: 0/3,628 3826/s chunk eta 0 min
+  CHUNK 3/8 DONE (1s) + saved to Drive
+  chunk 4/8: 0/3,629 3326/s chunk eta 0 min
+  CHUNK 4/8 DONE (1s) + saved to Drive
+  chunk 5/8: 0/3,628 3202/s chunk eta 0 min
+  CHUNK 5/8 DONE (1s) + saved to Drive
+  chunk 6/8: 0/3,629 2891/s chunk eta 0 min
+  CHUNK 6/8 DONE (1s) + saved to Drive
+  chunk 7/8: 0/3,628 2227/s chunk eta 0 min
+  CHUNK 7/8 DONE (2s) + saved to Drive
+  chunk 8/8: 0/3,629 2375/s chunk eta 0 min
+  CHUNK 8/8 DONE (2s) + saved to Drive
+  encode test: 22s
+== knn test Sat, Sep 26, 2026  7:54:38 AM
+> knn test US
+  knn test US: 1s
+> knn test India
+  knn test India: 0s
+== EMB TEST DONE Sat, Sep 26, 2026  7:54:57 AM

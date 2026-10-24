@@ -1,0 +1,155 @@
+inputs: core=D:/Amazzon/smoke_kaggle/input/mlc26-core emb=D:/Amazzon/smoke_kaggle/input/mlc26-emb v3=D:/Amazzon/smoke_kaggle/input/mlc26-v3
+linked 102 inputs
+D:/Amazzon/smoke_kaggle/run_R_local.sh: line 14: free: command not found
+== PREFLIGHT: inputs, GPUs, e5, disk Sun, Sep 27, 2026  2:34:16 PM
+PREFLIGHT OK: all 97 input files found and readable | GPUs 1 (NVIDIA GeForce RTX 3050 6GB Laptop GPU) | original e5 in the inputs (D:/Amazzon/smoke_kaggle/input_e5/multilingual-e5-small) | disk free 12 GB | RAM n/a
+run D models + test predictions found
+SELFTEST OK (polars 1.44.2): ambiguous / decode / 4 rule families / f05 = 0.6667
+== cosine (train) Sun, Sep 27, 2026  2:34:42 PM
+> cos3 train 0
+D:\Amazzon\smoke_kaggle\workingR\src\s10_v3.py:80: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  S = torch.from_numpy(np.ascontiguousarray(E[s1_rows])).to(DEV).float()   # this bucket's S1 embeddings
+  cos3 train 0: 1s
+> cos3 train 1
+  cos3 train 1: 0s
+> cos3 train 2
+  cos3 train 2: 0s
+> cos3 train 3
+  cos3 train 3: 0s
+> cos3 train 4
+  cos3 train 4: 0s
+> cos3 train 5
+  cos3 train 5: 0s
+> cos3 train 6
+  cos3 train 6: 0s
+> cos3 train 7
+  cos3 train 7: 0s
+== feat3 (train) Sun, Sep 27, 2026  2:34:47 PM
+> feat3 train 0
+  new pairs 6,063 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 0: 2s
+> feat3 train 1
+  new pairs 5,551 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 1: 2s
+> feat3 train 2
+  new pairs 6,248 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 2: 2s
+> feat3 train 3
+  new pairs 5,946 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 3: 1s
+> feat3 train 4
+  new pairs 6,359 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 4: 2s
+> feat3 train 5
+  new pairs 6,325 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 5: 2s
+> feat3 train 6
+  new pairs 5,945 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 6: 2s
+> feat3 train 7
+  new pairs 6,330 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 7: 2s
+feat3 train: 85,618 pairs, positives 11,125 / 11,166 = recall 0.9963
+== address add-on + competition features (train) Sun, Sep 27, 2026  2:35:39 PM
+> addr4 train 0
+  addr4 train 0: 2s
+> addr4 train 1
+  addr4 train 1: 1s
+> addr4 train 2
+  addr4 train 2: 1s
+> addr4 train 3
+  addr4 train 3: 1s
+> addr4 train 4
+  addr4 train 4: 1s
+> addr4 train 5
+  addr4 train 5: 1s
+> addr4 train 6
+  addr4 train 6: 1s
+> addr4 train 7
+  addr4 train 7: 1s
+> idcomp train
+  idcomp train: 0s
+== OOF from run D's stage-7 models (must reproduce D: best t=0.7 F=0.98702) Sun, Sep 27, 2026  2:35:53 PM
+stage 7 models from run D: 84 features, all present
+> oof stage 7 bucket 0
+  oof stage 7 bucket 0: 0s
+> oof stage 7 bucket 2
+  oof stage 7 bucket 2: 0s
+> oof stage 7 bucket 4
+  oof stage 7 bucket 4: 0s
+> oof stage 7 bucket 6
+  oof stage 7 bucket 6: 0s
+> oof stage 7 bucket 1
+  oof stage 7 bucket 1: 0s
+> oof stage 7 bucket 3
+  oof stage 7 bucket 3: 0s
+> oof stage 7 bucket 5
+  oof stage 7 bucket 5: 0s
+> oof stage 7 bucket 7
+  oof stage 7 bucket 7: 0s
+stage 7 OOF macro F0.5 (all train S1, global assign): best t=0.725 F=0.99357
+{0.2: 0.9891, 0.225: 0.9896, 0.25: 0.9904, 0.275: 0.9909, 0.3: 0.9913, 0.325: 0.9914, 0.35: 0.9914, 0.375: 0.9916, 0.4: 0.9918, 0.425: 0.9919, 0.45: 0.9922, 0.475: 0.9924, 0.5: 0.9923, 0.525: 0.9924, 0.55: 0.9925, 0.575: 0.9927, 0.6: 0.9934, 0.625: 0.9935, 0.65: 0.9935, 0.675: 0.9935, 0.7: 0.9934, 0.725: 0.9936, 0.75: 0.9935, 0.775: 0.9933, 0.8: 0.9933, 0.825: 0.9935, 0.85: 0.9934, 0.875: 0.9924, 0.9: 0.992, 0.925: 0.991, 0.95: 0.9889}
+by country {'India': 0.9913358134884177, 'US': 0.9950382137755622}
+== rules on train OOF Sun, Sep 27, 2026  2:36:00 PM
+> rules on train OOF
+baseline OOF at t 0.8: all 0.99330 | US 0.99486 | India 0.99090 | generic 0.98159 | generic S1 70 of 3,200 | caps {0.99: 8, 0.999: 9}
+  num   0.97   dropped        1  precision 1.000  dF all -0.00007  US -0.00011  India +0.00000  generic -0.00298  -
+  num   0.99   dropped        2  precision 1.000  dF all -0.00038  US -0.00062  India +0.00000  generic -0.01726  -
+  num   1.01   dropped        8  precision 1.000  dF all -0.00055  US -0.00090  India +0.00000  generic -0.02491  -
+  noad  0.97   dropped        5  precision 0.800  dF all -0.00001  US -0.00012  India +0.00017  generic -0.00036  -
+  noad  0.99   dropped        6  precision 0.833  dF all -0.00002  US -0.00014  India +0.00017  generic -0.00100  -
+  noad  1.01   dropped        7  precision 0.714  dF all +0.00012  US +0.00008  India +0.00017  generic +0.00535  -
+  cap   0.99   dropped        7  precision 1.000  dF all -0.00005  US -0.00006  India -0.00004  generic +0.00000  -
+  cap   0.999  dropped        0  precision 0.000  dF all +0.00000  US +0.00000  India +0.00000  generic +0.00000  -
+  amb   0.05   dropped        2  precision 0.500  dF all +0.00013  US +0.00021  India +0.00000  generic +0.00585  PASS
+  amb   0.1    dropped        2  precision 0.500  dF all +0.00013  US +0.00021  India +0.00000  generic +0.00585  PASS
+SELECTED {'amb': 0.05} -> combined OOF at t 0.8: all 0.99342 (+0.00013) | US 0.99507 (+0.00021) | India 0.99090 (+0.00000) | generic 0.98744 (+0.00585)
+  rules on train OOF: 1s
+> apply rules {'amb': 0.05} to stages [7, 8] -> blend78ft_rules
+shape: (2, 6)
+┌─────────┬─────────┬─────────┬──────┬────────────────┬─────────────┐
+│ country ┆ matched ┆ dropped ┆ n_s1 ┆ matches_per_S1 ┆ after_rules │
+│ ---     ┆ ---     ┆ ---     ┆ ---  ┆ ---            ┆ ---         │
+│ str     ┆ u32     ┆ u32     ┆ u32  ┆ f64            ┆ f64         │
+╞═════════╪═════════╪═════════╪══════╪════════════════╪═════════════╡
+│ India   ┆ 4475    ┆ 0       ┆ 1335 ┆ 3.352          ┆ 3.352       │
+│ US      ┆ 6209    ┆ 0       ┆ 1865 ┆ 3.329          ┆ 3.329       │
+└─────────┴─────────┴─────────┴──────┴────────────────┴─────────────┘
+  wrote D:\Amazzon\smoke_kaggle\workingR\blend78ft_rules/matching_results.tsv  matched pairs 10,684 (before rules 10,684)
+  apply rules {'amb': 0.05} to stages [7, 8] -> blend78ft_rules: 0s
+PASS — no blocking issues found. Safe to submit.
+== SUBMISSION READY: blend78ft_rules Sun, Sep 27, 2026  2:36:09 PM
+596K	D:/Amazzon/smoke_kaggle/workingR
+== KAGGLE RUN R DONE Sun, Sep 27, 2026  2:36:10 PM

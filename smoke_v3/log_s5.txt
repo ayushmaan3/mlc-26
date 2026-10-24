@@ -1,0 +1,603 @@
+== train: cosine + feat3 Sat, Sep 26, 2026  5:17:30 PM
+> cos3 train 0
+  cos3 train 0: 2s
+> cos3 train 1
+  cos3 train 1: 0s
+> cos3 train 2
+  cos3 train 2: 0s
+> cos3 train 3
+  cos3 train 3: 0s
+> cos3 train 4
+  cos3 train 4: 0s
+> cos3 train 5
+  cos3 train 5: 0s
+> cos3 train 6
+  cos3 train 6: 0s
+> cos3 train 7
+  cos3 train 7: 0s
+D:               98G   80G   18G  82% /d
+> feat3 train 0
+  new pairs 6,063 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 0: 3s
+D:               98G   80G   18G  82% /d
+> feat3 train 1
+  new pairs 5,551 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 1: 2s
+D:               98G   80G   18G  82% /d
+> feat3 train 2
+  new pairs 6,248 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 2: 3s
+D:               98G   80G   18G  82% /d
+> feat3 train 3
+  new pairs 5,946 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 3: 3s
+D:               98G   80G   18G  82% /d
+> feat3 train 4
+  new pairs 6,359 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 4: 2s
+D:               98G   80G   18G  82% /d
+> feat3 train 5
+  new pairs 6,325 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 5: 3s
+D:               98G   80G   18G  82% /d
+> feat3 train 6
+  new pairs 5,945 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 6: 3s
+D:               98G   80G   18G  82% /d
+> feat3 train 7
+  new pairs 6,330 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 train 7: 3s
+D:               98G   80G   18G  82% /d
+== test: take buckets the helper account already saved, build the rest Sat, Sep 26, 2026  5:19:06 PM
+> cos3 test 0
+  cos3 test 0: 1s
+> cos3 test 1
+  cos3 test 1: 0s
+> cos3 test 2
+  cos3 test 2: 0s
+> cos3 test 3
+  cos3 test 3: 0s
+> cos3 test 4
+  cos3 test 4: 0s
+> cos3 test 5
+  cos3 test 5: 0s
+> cos3 test 6
+  cos3 test 6: 0s
+> cos3 test 7
+  cos3 test 7: 0s
+D:               98G   80G   18G  82% /d
+> feat3 test 0
+  new pairs 6,485 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 0: 2s
+D:               98G   80G   18G  82% /d
+> feat3 test 1
+  new pairs 5,645 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 1: 2s
+D:               98G   80G   18G  82% /d
+> feat3 test 2
+  new pairs 6,737 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 2: 2s
+D:               98G   80G   18G  82% /d
+> feat3 test 3
+  new pairs 6,440 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 3: 2s
+D:               98G   80G   18G  82% /d
+> feat3 test 4
+  new pairs 5,843 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 4: 2s
+D:               98G   80G   18G  82% /d
+> feat3 test 5
+  new pairs 5,959 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 5: 2s
+D:               98G   80G   18G  82% /d
+> feat3 test 6
+  new pairs 5,984 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 6: 2s
+D:               98G   80G   18G  82% /d
+> feat3 test 7
+  new pairs 6,011 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 7: 2s
+D:               98G   80G   18G  82% /d
+feat3 train: 85,618 pairs, positives 11,125 / 11,166 = recall 0.9963
+== stage1 Sat, Sep 26, 2026  5:20:39 PM
+stage 1: 69 features
+> train stage 1 fold 0 on buckets [0, 2, 4, 6]
+[0]	ev-logloss:0.33819
+[100]	ev-logloss:0.00854
+[200]	ev-logloss:0.00804
+[300]	ev-logloss:0.00804
+[386]	ev-logloss:0.00806
+best iteration 286
+top gain: [('emb_cos', 2660), ('pair_sum', 1677), ('pair_sum2', 397), ('core_tsort', 242), ('sup_max', 224), ('sup_n90', 97), ('ad_wcov1', 94), ('rk', 92), ('emb_rk', 75), ('sc', 72), ('addr_tset', 46), ('core_tset', 45), ('addr_tsort', 41), ('ad_wcov2', 35), ('nosp_ratio', 32), ('ad_wj', 29), ('nm_wmax', 28), ('addr_ratio', 26), ('gap_s1_best2', 25), ('nosp_partial', 23)]
+  train stage 1 fold 0 on buckets [0, 2, 4, 6]: 4s
+> train stage 1 fold 1 on buckets [1, 3, 5, 7]
+[0]	ev-logloss:0.31410
+[100]	ev-logloss:0.00471
+[200]	ev-logloss:0.00430
+[294]	ev-logloss:0.00430
+best iteration 194
+top gain: [('emb_cos', 2602), ('pair_sum', 1566), ('sc', 846), ('pair_sum2', 240), ('ad_wcov1', 160), ('nm_wj', 135), ('rk', 112), ('sup_max', 82), ('core_tset', 52), ('len_addr2', 47), ('ad_wj', 47), ('addr_tset', 46), ('addr_tsort', 38), ('ad_wcov2', 37), ('name_ratio', 36), ('rk_s1_ps', 31), ('core_partial', 31), ('nosp_partial', 29), ('num_diff', 25), ('nm_wmax', 24)]
+  train stage 1 fold 1 on buckets [1, 3, 5, 7]: 2s
+> oof stage 1 bucket 0
+  oof stage 1 bucket 0: 0s
+> oof stage 1 bucket 2
+  oof stage 1 bucket 2: 0s
+> oof stage 1 bucket 4
+  oof stage 1 bucket 4: 0s
+> oof stage 1 bucket 6
+  oof stage 1 bucket 6: 0s
+> oof stage 1 bucket 1
+  oof stage 1 bucket 1: 0s
+> oof stage 1 bucket 3
+  oof stage 1 bucket 3: 0s
+> oof stage 1 bucket 5
+  oof stage 1 bucket 5: 0s
+> oof stage 1 bucket 7
+  oof stage 1 bucket 7: 0s
+> test stage 1 bucket 0
+  test stage 1 bucket 0: 0s
+> test stage 1 bucket 1
+  test stage 1 bucket 1: 0s
+> test stage 1 bucket 2
+  test stage 1 bucket 2: 0s
+> test stage 1 bucket 3
+  test stage 1 bucket 3: 0s
+> test stage 1 bucket 4
+  test stage 1 bucket 4: 0s
+> test stage 1 bucket 5
+  test stage 1 bucket 5: 0s
+> test stage 1 bucket 6
+  test stage 1 bucket 6: 0s
+> test stage 1 bucket 7
+  test stage 1 bucket 7: 0s
+stage 1 OOF macro F0.5 (all train S1, global assign): best t=0.45 F=0.99349
+{0.2: 0.9921, 0.225: 0.9924, 0.25: 0.9927, 0.275: 0.9931, 0.3: 0.9932, 0.325: 0.9933, 0.35: 0.9932, 0.375: 0.9932, 0.4: 0.9932, 0.425: 0.993, 0.45: 0.9935, 0.475: 0.9934, 0.5: 0.9934, 0.525: 0.9934, 0.55: 0.9932, 0.575: 0.9932, 0.6: 0.9931, 0.625: 0.9931, 0.65: 0.9927, 0.675: 0.9927, 0.7: 0.9927, 0.725: 0.9925, 0.75: 0.9923, 0.775: 0.9923, 0.8: 0.9923, 0.825: 0.992, 0.85: 0.9919, 0.875: 0.9909, 0.9: 0.9906, 0.925: 0.9894, 0.95: 0.9875}
+by country {'India': 0.9917905516745592, 'US': 0.9946006503166203}
+> write matches stage 1 t=0.45
+matched pairs 10782 S1 with >=1 match 2997 of 3200
+  write matches stage 1 t=0.45: 0s
+> write candidates
+  write candidates: 0s
+ML Challenge 2026 — submission validator
+  test dir: D:/Amazzon/smoke_v3/drive/student_resource/dataset/test
+  required S1 entities: 3200
+  matching_results.tsv: 3200 rows (203 empty, 2997 non-empty).
+
+WARNING: ID-existence check is OFF (the default) — not checking that matched/candidate IDs exist in the test set. Every other rule is still checked. Re-run with --check-ids to enable it (needs test_source2/3.tsv; uses more memory). A nonexistent ID only lowers your score, never rejects your submission.
+WARNING: output/candidate_pairs.tsv not found — skipping candidate_pairs.tsv checks. It is optional here, but your final submission zip must include output/candidate_pairs.tsv.
+PASS — no blocking issues found. Safe to submit.
+== SUBMISSION READY: MLC'26/output_v3s1 Sat, Sep 26, 2026  5:21:05 PM
+== cross-encoder Sat, Sep 26, 2026  5:21:05 PM
+train: 955 uncertain pairs in [0.03, 0.97]
+test: 950 uncertain pairs in [0.03, 0.97]
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:  30%|██▉       | 60/201 [00:00<00:00, 596.60it/s]Loading weights:  70%|███████   | 141/201 [00:00<00:00, 718.61it/s]Loading weights: 100%|██████████| 201/201 [00:00<00:00, 754.27it/s]
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]Loading weights:   4%|▍         | 9/201 [00:00<00:02, 89.69it/s]Loading weights:  60%|█████▉    | 120/201 [00:00<00:00, 668.57it/s]Loading weights: 100%|██████████| 201/201 [00:00<00:00, 668.83it/s]
+> ce predict train 0
+  118 pairs, 70 pairs/s
+  ce predict train 0: 2s
+> ce predict train 2
+  132 pairs, 1100 pairs/s
+  ce predict train 2: 0s
+> ce predict train 4
+  128 pairs, 1104 pairs/s
+  ce predict train 4: 0s
+> ce predict train 6
+  136 pairs, 1078 pairs/s
+  ce predict train 6: 0s
+> ce predict train 1
+  106 pairs, 1104 pairs/s
+  ce predict train 1: 0s
+> ce predict train 3
+  104 pairs, 1098 pairs/s
+  ce predict train 3: 0s
+> ce predict train 5
+  105 pairs, 938 pairs/s
+  ce predict train 5: 0s
+> ce predict train 7
+  126 pairs, 1134 pairs/s
+  ce predict train 7: 0s
+> ce predict test 0
+  125 pairs, 639 pairs/s
+  ce predict test 0: 0s
+> ce predict test 1
+  97 pairs, 618 pairs/s
+  ce predict test 1: 0s
+> ce predict test 2
+  124 pairs, 680 pairs/s
+  ce predict test 2: 0s
+> ce predict test 3
+  116 pairs, 732 pairs/s
+  ce predict test 3: 0s
+> ce predict test 4
+  130 pairs, 661 pairs/s
+  ce predict test 4: 0s
+> ce predict test 5
+  138 pairs, 724 pairs/s
+  ce predict test 5: 0s
+> ce predict test 6
+  125 pairs, 689 pairs/s
+  ce predict test 6: 0s
+> ce predict test 7
+  95 pairs, 605 pairs/s
+  ce predict test 7: 0s
+== stage4 (stage 1 + cross-encoder, no stacking) Sat, Sep 26, 2026  5:22:52 PM
+stage 4: 70 features
+> train stage 4 fold 0 on buckets [0, 2, 4, 6]
+[0]	ev-logloss:0.33819
+[100]	ev-logloss:0.00964
+[200]	ev-logloss:0.00980
+[203]	ev-logloss:0.00980
+best iteration 103
+top gain: [('pair_sum', 4621), ('emb_cos', 2984), ('sup_n90', 449), ('pair_sum2', 353), ('sc', 284), ('sup_max', 255), ('ad_wcov1', 135), ('rk', 95), ('core_tsort', 79), ('ce', 77), ('ad_wj', 70), ('sup_mean', 50), ('erk', 49), ('emb_rk', 38), ('nm_wmax', 35), ('ad_wcov2', 33), ('addr_tset', 29), ('num_diff', 23), ('nosp_ratio', 22), ('name_ratio', 21)]
+  train stage 4 fold 0 on buckets [0, 2, 4, 6]: 3s
+> train stage 4 fold 1 on buckets [1, 3, 5, 7]
+[0]	ev-logloss:0.31410
+[100]	ev-logloss:0.00645
+[200]	ev-logloss:0.00541
+[300]	ev-logloss:0.00530
+[394]	ev-logloss:0.00541
+best iteration 294
+top gain: [('emb_cos', 2486), ('pair_sum', 1926), ('sc', 314), ('pair_sum2', 299), ('ad_wcov1', 101), ('rk', 93), ('ce', 87), ('ad_wj', 81), ('erk', 47), ('sup_max', 42), ('name_ratio', 31), ('emb_rk', 28), ('addr_tsort', 27), ('addr_tset', 23), ('num_diff', 22), ('core_tset', 20), ('len_addr2', 20), ('ad_wcov2', 18), ('nm_wmax', 15), ('sup_mean', 15)]
+  train stage 4 fold 1 on buckets [1, 3, 5, 7]: 3s
+> oof stage 4 bucket 0
+  oof stage 4 bucket 0: 0s
+> oof stage 4 bucket 2
+  oof stage 4 bucket 2: 0s
+> oof stage 4 bucket 4
+  oof stage 4 bucket 4: 0s
+> oof stage 4 bucket 6
+  oof stage 4 bucket 6: 0s
+> oof stage 4 bucket 1
+  oof stage 4 bucket 1: 0s
+> oof stage 4 bucket 3
+  oof stage 4 bucket 3: 0s
+> oof stage 4 bucket 5
+  oof stage 4 bucket 5: 0s
+> oof stage 4 bucket 7
+  oof stage 4 bucket 7: 0s
+> test stage 4 bucket 0
+  test stage 4 bucket 0: 0s
+> test stage 4 bucket 1
+  test stage 4 bucket 1: 0s
+> test stage 4 bucket 2
+  test stage 4 bucket 2: 0s
+> test stage 4 bucket 3
+  test stage 4 bucket 3: 0s
+> test stage 4 bucket 4
+  test stage 4 bucket 4: 0s
+> test stage 4 bucket 5
+  test stage 4 bucket 5: 0s
+> test stage 4 bucket 6
+  test stage 4 bucket 6: 0s
+> test stage 4 bucket 7
+  test stage 4 bucket 7: 0s
+stage 4 OOF macro F0.5 (all train S1, global assign): best t=0.525 F=0.99354
+{0.2: 0.9914, 0.225: 0.992, 0.25: 0.9922, 0.275: 0.9922, 0.3: 0.9924, 0.325: 0.9929, 0.35: 0.993, 0.375: 0.993, 0.4: 0.9932, 0.425: 0.9934, 0.45: 0.9934, 0.475: 0.9934, 0.5: 0.9935, 0.525: 0.9935, 0.55: 0.9935, 0.575: 0.9932, 0.6: 0.9931, 0.625: 0.9931, 0.65: 0.9931, 0.675: 0.9932, 0.7: 0.9931, 0.725: 0.993, 0.75: 0.9927, 0.775: 0.9926, 0.8: 0.9925, 0.825: 0.9918, 0.85: 0.9916, 0.875: 0.9911, 0.9: 0.9898, 0.925: 0.9888, 0.95: 0.9861}
+by country {'India': 0.9922478788202095, 'US': 0.994376624115993}
+> write matches stage 4 t=0.525
+matched pairs 10792 S1 with >=1 match 2998 of 3200
+  write matches stage 4 t=0.525: 0s
+> write candidates
+  write candidates: 0s
+ML Challenge 2026 — submission validator
+  test dir: D:/Amazzon/smoke_v3/drive/student_resource/dataset/test
+  required S1 entities: 3200
+  matching_results.tsv: 3200 rows (202 empty, 2998 non-empty).
+
+WARNING: ID-existence check is OFF (the default) — not checking that matched/candidate IDs exist in the test set. Every other rule is still checked. Re-run with --check-ids to enable it (needs test_source2/3.tsv; uses more memory). A nonexistent ID only lowers your score, never rejects your submission.
+WARNING: output/candidate_pairs.tsv not found — skipping candidate_pairs.tsv checks. It is optional here, but your final submission zip must include output/candidate_pairs.tsv.
+PASS — no blocking issues found. Safe to submit.
+== SUBMISSION READY: MLC'26/output_v3s4 Sat, Sep 26, 2026  5:23:14 PM
+== address add-on features (house-number noise) Sat, Sep 26, 2026  5:23:14 PM
+> addr4 train 0
+  addr4 train 0: 2s
+> addr4 train 1
+  addr4 train 1: 0s
+> addr4 train 2
+  addr4 train 2: 1s
+> addr4 train 3
+  addr4 train 3: 1s
+> addr4 train 4
+  addr4 train 4: 1s
+> addr4 train 5
+  addr4 train 5: 1s
+> addr4 train 6
+  addr4 train 6: 1s
+> addr4 train 7
+  addr4 train 7: 1s
+> addr4 test 0
+  addr4 test 0: 1s
+> addr4 test 1
+  addr4 test 1: 0s
+> addr4 test 2
+  addr4 test 2: 0s
+> addr4 test 3
+  addr4 test 3: 0s
+> addr4 test 4
+  addr4 test 4: 1s
+> addr4 test 5
+  addr4 test 5: 1s
+> addr4 test 6
+  addr4 test 6: 1s
+> addr4 test 7
+  addr4 test 7: 1s
+== stage5 (stage 4 + address features) Sat, Sep 26, 2026  5:23:28 PM
+stage 5: 75 features
+> train stage 5 fold 0 on buckets [0, 2, 4, 6]
+[0]	ev-logloss:0.33819
+[100]	ev-logloss:0.00939
+[182]	ev-logloss:0.00963
+best iteration 82
+top gain: [('emb_cos', 3151), ('pair_sum', 3090), ('sup_max', 276), ('pair_sum2', 266), ('sc', 227), ('sup_n90', 226), ('ad_wcov1', 178), ('rk', 92), ('ce', 89), ('ad_wj', 56), ('core_tsort', 55), ('addr_tset', 43), ('erk', 40), ('emb_rk', 37), ('num_reldiff', 36), ('ad_wcov2', 34), ('sup_mean', 33), ('nm_wmax', 33), ('nosp_ratio', 26), ('num_diff', 23)]
+  train stage 5 fold 0 on buckets [0, 2, 4, 6]: 3s
+> train stage 5 fold 1 on buckets [1, 3, 5, 7]
+[0]	ev-logloss:0.31410
+[100]	ev-logloss:0.00651
+[200]	ev-logloss:0.00542
+[300]	ev-logloss:0.00525
+[400]	ev-logloss:0.00538
+best iteration 300
+top gain: [('emb_cos', 2437), ('pair_sum', 1927), ('sc', 268), ('pair_sum2', 263), ('ad_wj', 110), ('ce', 87), ('rk', 84), ('ad_wcov1', 61), ('sup_max', 58), ('addr_tsort', 52), ('name_ratio', 32), ('num_reldiff', 30), ('erk', 27), ('ad_wcov2', 26), ('addr_tset', 23), ('len_addr2', 21), ('core_tset', 20), ('num1_in_2', 16), ('emb_rk', 16), ('street_tset', 15)]
+  train stage 5 fold 1 on buckets [1, 3, 5, 7]: 3s
+> oof stage 5 bucket 0
+  oof stage 5 bucket 0: 0s
+> oof stage 5 bucket 2
+  oof stage 5 bucket 2: 0s
+> oof stage 5 bucket 4
+  oof stage 5 bucket 4: 0s
+> oof stage 5 bucket 6
+  oof stage 5 bucket 6: 0s
+> oof stage 5 bucket 1
+  oof stage 5 bucket 1: 0s
+> oof stage 5 bucket 3
+  oof stage 5 bucket 3: 0s
+> oof stage 5 bucket 5
+  oof stage 5 bucket 5: 0s
+> oof stage 5 bucket 7
+  oof stage 5 bucket 7: 0s
+> test stage 5 bucket 0
+  test stage 5 bucket 0: 0s
+> test stage 5 bucket 1
+  test stage 5 bucket 1: 0s
+> test stage 5 bucket 2
+  test stage 5 bucket 2: 0s
+> test stage 5 bucket 3
+  test stage 5 bucket 3: 0s
+> test stage 5 bucket 4
+  test stage 5 bucket 4: 0s
+> test stage 5 bucket 5
+  test stage 5 bucket 5: 0s
+> test stage 5 bucket 6
+  test stage 5 bucket 6: 0s
+> test stage 5 bucket 7
+  test stage 5 bucket 7: 0s
+stage 5 OOF macro F0.5 (all train S1, global assign): best t=0.65 F=0.99354
+{0.2: 0.9913, 0.225: 0.992, 0.25: 0.9924, 0.275: 0.9926, 0.3: 0.9925, 0.325: 0.9925, 0.35: 0.9927, 0.375: 0.9928, 0.4: 0.9931, 0.425: 0.9931, 0.45: 0.993, 0.475: 0.9932, 0.5: 0.9933, 0.525: 0.9933, 0.55: 0.9932, 0.575: 0.9933, 0.6: 0.9933, 0.625: 0.9934, 0.65: 0.9935, 0.675: 0.9933, 0.7: 0.9932, 0.725: 0.9931, 0.75: 0.993, 0.775: 0.9929, 0.8: 0.9926, 0.825: 0.9923, 0.85: 0.992, 0.875: 0.9906, 0.9: 0.9901, 0.925: 0.9891, 0.95: 0.9866}
+by country {'India': 0.9917359425717551, 'US': 0.9947235181440375}
+> write matches stage 5 t=0.65
+matched pairs 10741 S1 with >=1 match 2995 of 3200
+  write matches stage 5 t=0.65: 0s
+> write candidates
+  write candidates: 0s
+ML Challenge 2026 — submission validator
+  test dir: D:/Amazzon/smoke_v3/drive/student_resource/dataset/test
+  required S1 entities: 3200
+  matching_results.tsv: 3200 rows (205 empty, 2995 non-empty).
+
+WARNING: ID-existence check is OFF (the default) — not checking that matched/candidate IDs exist in the test set. Every other rule is still checked. Re-run with --check-ids to enable it (needs test_source2/3.tsv; uses more memory). A nonexistent ID only lowers your score, never rejects your submission.
+WARNING: output/candidate_pairs.tsv not found — skipping candidate_pairs.tsv checks. It is optional here, but your final submission zip must include output/candidate_pairs.tsv.
+PASS — no blocking issues found. Safe to submit.
+== SUBMISSION READY: MLC'26/output_v3s5 Sat, Sep 26, 2026  5:23:49 PM
+== comp (fold-consistent) Sat, Sep 26, 2026  5:23:49 PM
+> comp train
+  comp train: 0s
+> comp test from model 0
+  comp test from model 0: 0s
+> comp test from model 1
+  comp test from model 1: 0s
+== stage2 Sat, Sep 26, 2026  5:23:56 PM
+stage 2: 80 features
+> train stage 2 fold 0 on buckets [0, 2, 4, 6]
+[0]	ev-logloss:0.34724
+[100]	ev-logloss:0.00933
+[200]	ev-logloss:0.00895
+[255]	ev-logloss:0.00897
+best iteration 155
+top gain: [('emb_cos', 2910), ('p1', 1174), ('sc', 766), ('sup_mean', 236), ('pair_sum2', 157), ('id_margin', 130), ('rk', 64), ('s1_gap', 50), ('emb_rk', 32), ('sup_max', 27), ('addr_tsort', 22), ('nm_wcov1', 15), ('id_n', 10), ('nosp_ratio', 9), ('ad_wmax', 8), ('ad_wcov2', 8), ('nm_wcov2', 8), ('num_diff', 7), ('emb_gap', 6), ('num_jacc', 5)]
+  train stage 2 fold 0 on buckets [0, 2, 4, 6]: 3s
+> train stage 2 fold 1 on buckets [1, 3, 5, 7]
+[0]	ev-logloss:0.30736
+[100]	ev-logloss:0.00405
+[200]	ev-logloss:0.00377
+[300]	ev-logloss:0.00366
+[400]	ev-logloss:0.00364
+[500]	ev-logloss:0.00362
+[600]	ev-logloss:0.00363
+[641]	ev-logloss:0.00363
+best iteration 541
+top gain: [('emb_cos', 3298), ('sc', 1376), ('p1', 1105), ('id_margin', 184), ('pair_sum2', 181), ('id_top', 106), ('id_n10', 62), ('addr_tsort', 47), ('s1_gap', 42), ('ad_wj', 25), ('num_jacc', 17), ('len_addr2', 15), ('num1_lev', 10), ('name_ratio', 9), ('sup_max', 9), ('id_n', 9), ('core_ratio', 8), ('n_nums2', 8), ('ad_wcov2', 7), ('nosp_ratio', 6)]
+  train stage 2 fold 1 on buckets [1, 3, 5, 7]: 3s
+> oof stage 2 bucket 0
+  oof stage 2 bucket 0: 0s
+> oof stage 2 bucket 2
+  oof stage 2 bucket 2: 0s
+> oof stage 2 bucket 4
+  oof stage 2 bucket 4: 0s
+> oof stage 2 bucket 6
+  oof stage 2 bucket 6: 0s
+> oof stage 2 bucket 1
+  oof stage 2 bucket 1: 0s
+> oof stage 2 bucket 3
+  oof stage 2 bucket 3: 0s
+> oof stage 2 bucket 5
+  oof stage 2 bucket 5: 0s
+> oof stage 2 bucket 7
+  oof stage 2 bucket 7: 0s
+> test stage 2 bucket 0
+  test stage 2 bucket 0: 0s
+> test stage 2 bucket 1
+  test stage 2 bucket 1: 0s
+> test stage 2 bucket 2
+  test stage 2 bucket 2: 0s
+> test stage 2 bucket 3
+  test stage 2 bucket 3: 0s
+> test stage 2 bucket 4
+  test stage 2 bucket 4: 0s
+> test stage 2 bucket 5
+  test stage 2 bucket 5: 0s
+> test stage 2 bucket 6
+  test stage 2 bucket 6: 0s
+> test stage 2 bucket 7
+  test stage 2 bucket 7: 0s
+stage 2 OOF macro F0.5 (all train S1, global assign): best t=0.8 F=0.99270
+{0.2: 0.9881, 0.225: 0.9882, 0.25: 0.9887, 0.275: 0.9889, 0.3: 0.9894, 0.325: 0.9896, 0.35: 0.9901, 0.375: 0.9901, 0.4: 0.9904, 0.425: 0.9907, 0.45: 0.9908, 0.475: 0.9909, 0.5: 0.9911, 0.525: 0.9912, 0.55: 0.9917, 0.575: 0.9918, 0.6: 0.9917, 0.625: 0.9921, 0.65: 0.9922, 0.675: 0.9922, 0.7: 0.9923, 0.725: 0.9923, 0.75: 0.9923, 0.775: 0.9922, 0.8: 0.9927, 0.825: 0.9926, 0.85: 0.9925, 0.875: 0.9923, 0.9: 0.992, 0.925: 0.9915, 0.95: 0.9906}
+by country {'India': 0.9919924543044744, 'US': 0.9931572389571883}
+> write matches stage 2 t=0.8
+matched pairs 10713 S1 with >=1 match 2993 of 3200
+  write matches stage 2 t=0.8: 0s
+> write candidates
+  write candidates: 0s
+ML Challenge 2026 — submission validator
+  test dir: D:/Amazzon/smoke_v3/drive/student_resource/dataset/test
+  required S1 entities: 3200
+  matching_results.tsv: 3200 rows (207 empty, 2993 non-empty).
+
+WARNING: ID-existence check is OFF (the default) — not checking that matched/candidate IDs exist in the test set. Every other rule is still checked. Re-run with --check-ids to enable it (needs test_source2/3.tsv; uses more memory). A nonexistent ID only lowers your score, never rejects your submission.
+WARNING: output/candidate_pairs.tsv not found — skipping candidate_pairs.tsv checks. It is optional here, but your final submission zip must include output/candidate_pairs.tsv.
+PASS — no blocking issues found. Safe to submit.
+== SUBMISSION READY: MLC'26/output_v3s2 Sat, Sep 26, 2026  5:24:17 PM
+== stage3 Sat, Sep 26, 2026  5:24:17 PM
+stage 3: 86 features
+> train stage 3 fold 0 on buckets [0, 2, 4, 6]
+[0]	ev-logloss:0.34698
+[100]	ev-logloss:0.00923
+[200]	ev-logloss:0.00849
+[300]	ev-logloss:0.00846
+[400]	ev-logloss:0.00842
+[500]	ev-logloss:0.00845
+[504]	ev-logloss:0.00846
+best iteration 404
+top gain: [('emb_cos', 5267), ('p1', 1498), ('sc', 764), ('pair_sum2', 615), ('id_margin', 124), ('s1_gap', 61), ('sup_mean', 36), ('s1_sum', 35), ('ce', 21), ('sup_max', 15), ('rk', 14), ('ad_wcov2', 13), ('num_reldiff', 11), ('nosp_ratio', 10), ('id_n', 9), ('ad_wmax', 8), ('num_diff', 8), ('nm_wcov2', 7), ('name_ratio', 6), ('addr_tset', 6)]
+  train stage 3 fold 0 on buckets [0, 2, 4, 6]: 4s
+> train stage 3 fold 1 on buckets [1, 3, 5, 7]
+[0]	ev-logloss:0.30729
+[100]	ev-logloss:0.00404
+[200]	ev-logloss:0.00397
+[218]	ev-logloss:0.00396
+best iteration 118
+top gain: [('emb_cos', 5463), ('sc', 1373), ('p1', 1358), ('id_margin', 170), ('s1_max', 141), ('s1_gap', 125), ('s1_n50', 89), ('id_n10', 60), ('name_ratio', 47), ('ce', 21), ('num_reldiff', 15), ('pair_sum', 14), ('sup_max', 10), ('ad_wcov2', 10), ('ad_wsh', 9), ('num1_lev', 8), ('id_n', 8), ('ad_wj', 8), ('s1_rank', 8), ('addr_ratio', 7)]
+  train stage 3 fold 1 on buckets [1, 3, 5, 7]: 2s
+> oof stage 3 bucket 0
+  oof stage 3 bucket 0: 0s
+> oof stage 3 bucket 2
+  oof stage 3 bucket 2: 0s
+> oof stage 3 bucket 4
+  oof stage 3 bucket 4: 0s
+> oof stage 3 bucket 6
+  oof stage 3 bucket 6: 0s
+> oof stage 3 bucket 1
+  oof stage 3 bucket 1: 0s
+> oof stage 3 bucket 3
+  oof stage 3 bucket 3: 0s
+> oof stage 3 bucket 5
+  oof stage 3 bucket 5: 0s
+> oof stage 3 bucket 7
+  oof stage 3 bucket 7: 0s
+> test stage 3 bucket 0
+  test stage 3 bucket 0: 0s
+> test stage 3 bucket 1
+  test stage 3 bucket 1: 0s
+> test stage 3 bucket 2
+  test stage 3 bucket 2: 0s
+> test stage 3 bucket 3
+  test stage 3 bucket 3: 0s
+> test stage 3 bucket 4
+  test stage 3 bucket 4: 0s
+> test stage 3 bucket 5
+  test stage 3 bucket 5: 0s
+> test stage 3 bucket 6
+  test stage 3 bucket 6: 0s
+> test stage 3 bucket 7
+  test stage 3 bucket 7: 0s
+stage 3 OOF macro F0.5 (all train S1, global assign): best t=0.775 F=0.99334
+{0.2: 0.9894, 0.225: 0.9899, 0.25: 0.9902, 0.275: 0.9904, 0.3: 0.9908, 0.325: 0.9908, 0.35: 0.9912, 0.375: 0.9914, 0.4: 0.9915, 0.425: 0.9917, 0.45: 0.992, 0.475: 0.9921, 0.5: 0.9923, 0.525: 0.9924, 0.55: 0.9925, 0.575: 0.9928, 0.6: 0.9928, 0.625: 0.9929, 0.65: 0.9932, 0.675: 0.9932, 0.7: 0.9932, 0.725: 0.9932, 0.75: 0.9931, 0.775: 0.9933, 0.8: 0.9931, 0.825: 0.9929, 0.85: 0.9927, 0.875: 0.992, 0.9: 0.9919, 0.925: 0.9918, 0.95: 0.991}
+by country {'India': 0.9914415174662614, 'US': 0.9945759616733406}
+> write matches stage 3 t=0.775
+matched pairs 10735 S1 with >=1 match 2994 of 3200
+  write matches stage 3 t=0.775: 0s
+> write candidates
+  write candidates: 0s
+ML Challenge 2026 — submission validator
+  test dir: D:/Amazzon/smoke_v3/drive/student_resource/dataset/test
+  required S1 entities: 3200
+  matching_results.tsv: 3200 rows (206 empty, 2994 non-empty).
+
+WARNING: ID-existence check is OFF (the default) — not checking that matched/candidate IDs exist in the test set. Every other rule is still checked. Re-run with --check-ids to enable it (needs test_source2/3.tsv; uses more memory). A nonexistent ID only lowers your score, never rejects your submission.
+WARNING: output/candidate_pairs.tsv not found — skipping candidate_pairs.tsv checks. It is optional here, but your final submission zip must include output/candidate_pairs.tsv.
+PASS — no blocking issues found. Safe to submit.
+== SUBMISSION READY: MLC'26/output_v3s3 Sat, Sep 26, 2026  5:24:38 PM
+== V3 ALL DONE Sat, Sep 26, 2026  5:24:38 PM

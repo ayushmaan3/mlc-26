@@ -1,0 +1,74 @@
+== TEST-HALF MODE: cosine + feat3 for test Sat, Sep 26, 2026  9:55:23 AM
+> cos3 test 0
+  cos3 test 0: 2s
+> cos3 test 1
+  cos3 test 1: 0s
+> cos3 test 2
+  cos3 test 2: 0s
+> cos3 test 3
+  cos3 test 3: 0s
+> cos3 test 4
+  cos3 test 4: 0s
+> cos3 test 5
+  cos3 test 5: 0s
+> cos3 test 6
+  cos3 test 6: 0s
+> cos3 test 7
+  cos3 test 7: 0s
+> feat3 test 0
+  new pairs 6,485 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 0: 2s
+> feat3 test 1
+  new pairs 5,645 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 1: 2s
+> feat3 test 2
+  new pairs 6,737 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 2: 1s
+> feat3 test 3
+  new pairs 6,440 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 3: 2s
+> feat3 test 4
+  new pairs 5,843 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 4: 2s
+> feat3 test 5
+  new pairs 5,959 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 5: 2s
+> feat3 test 6
+  new pairs 5,984 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 6: 3s
+> feat3 test 7
+  new pairs 6,011 (rss n/a)
+  quarter 1/4 rss n/a
+  quarter 2/4 rss n/a
+  quarter 3/4 rss n/a
+  quarter 4/4 rss n/a
+  feat3 test 7: 2s
+== TEST FEAT3 DONE Sat, Sep 26, 2026  9:56:34 AM

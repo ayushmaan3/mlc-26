@@ -1,0 +1,7 @@
+> encode test with m0 + m1
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  28%|##7       | 55/199 [00:00<00:00, 487.98it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1137.54it/s]
+D:\Amazzon\.venv\Lib\site-packages\torch\nn\modules\module.py:1370: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  return t.to(
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  49%|####8     | 97/199 [00:00<00:00, 941.72it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 1037.05it/s]
+  0/29,028 998/s eta 0 min
+  encode test with m0 + m1: 25s
